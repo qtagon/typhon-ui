@@ -1,8 +1,8 @@
 {
-  "name": "typhon-ui",
+  "name": "@qtagon/typhon-ui",
   "version": "1.0.0",
   "description": "Strongly typed dynamic ui generator",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "prepare" : "npm run build",
     "prepublishOnly" : "npm run lint",
@@ -10,7 +10,7 @@
     "version" : "npm run format && git add -A core",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "format": "prettier --write \"core/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
   },
   "repository": {

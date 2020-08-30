@@ -83,7 +83,7 @@ class Typhon {
    * @param identifier - column identifier
    * @returns {Column} - Column instance
    */
-  public onColumn(identifier: string = ''): Column {
+  public onColumn(identifier: string = ''): Column | undefined {
     const column = this.icolumns.get(identifier);
     return column;
   }
@@ -93,8 +93,9 @@ class Typhon {
    * @param identifier - container identifier
    * @returns {Container} - Container instance
    */
-  public onContainer(identifier: string = ''): Container {
-    return this.icontainers.get(identifier);
+  public onContainer(identifier: string = ''): Container | undefined {
+    const container = this.icontainers.get(identifier);
+    return container;
   }
 
   /**
@@ -104,6 +105,8 @@ class Typhon {
    */
   public ixColumn(identifier: string = ''): this {
     const column = this.icolumns.get(identifier);
+    if (!column) return this;
+
     this.rows.push(...column.getRows());
 
     column
@@ -120,6 +123,9 @@ class Typhon {
    */
   public ixRow(identifier: string = ''): this {
     const row = this.irows.get(identifier);
+
+    if (!row) return this;
+
     this.containers.push(...row.getContainers());
 
     row
