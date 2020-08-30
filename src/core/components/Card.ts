@@ -1,8 +1,8 @@
 import { Component } from '../Component';
-import { SIZE } from '../enums';
+import { SIZE } from '../enums/index';
 import { Image } from './Image';
 import { Media } from './Media';
-import { Actionable } from '../mixins';
+import { Actionable } from '../mixins/index';
 
 export class Card extends Actionable(Component) {
   type: string = 'card';
@@ -19,7 +19,7 @@ export class Card extends Actionable(Component) {
    */
   constructor(title: string, subtitle: string) {
     super();
-    super.title = title;
+    this.title = title;
     this.subtitle = subtitle;
     this.images = [];
     this.iimages = new Map();

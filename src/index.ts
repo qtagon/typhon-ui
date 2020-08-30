@@ -1,6 +1,6 @@
-import { Column, Container, Row } from './core';
+import { Column, Container, Row } from './core/index';
 import type { Component } from './core/Component';
-import { Modal } from './core/components';
+import { Modal } from './core/components/index';
 
 /**
  * Typhon class

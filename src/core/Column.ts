@@ -1,6 +1,6 @@
 import { Row } from './Row';
 import { Component } from '.';
-import { Scrollable } from './mixins';
+import { Scrollable } from './mixins/index';
 
 export class Column extends Scrollable(Component) {
   type: string = 'column';
@@ -10,7 +10,7 @@ export class Column extends Scrollable(Component) {
 
   constructor(identifier: string = '') {
     super();
-    super.identifier = identifier;
+    this.identifier = identifier;
     this.rows = [];
     this.irows = new Map();
   }

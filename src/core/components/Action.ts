@@ -1,5 +1,5 @@
 import { Component } from '../Component';
-import { SIZE } from '../enums';
+import { SIZE } from '../enums/index';
 import { Icon } from './Icon';
 
 export class Action extends Component {
@@ -9,8 +9,8 @@ export class Action extends Component {
 
   constructor(title: string, size: SIZE = SIZE.NONE) {
     super();
-    super.title = title;
-    super.size = size;
+    this.title = title;
+    this.size = size;
     this.url = '';
   }
 

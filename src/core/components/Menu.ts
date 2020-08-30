@@ -13,7 +13,7 @@ export class Menu extends Component {
    */
   constructor(title: string) {
     super();
-    super.title = title;
+    this.title = title;
     this.options = [];
     this.ioptions = new Map();
   }

@@ -1,5 +1,5 @@
 import { Component } from '../Component';
-import { Actionable, Eventable } from '../mixins';
+import { Actionable, Eventable } from '../mixins/index';
 
 export class Search extends Eventable(Actionable(Component)) {
   type: string = 'search';
@@ -10,6 +10,6 @@ export class Search extends Eventable(Actionable(Component)) {
    */
   constructor(title: string) {
     super();
-    super.title = title;
+    this.title = title;
   }
 }

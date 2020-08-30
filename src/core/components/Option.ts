@@ -1,6 +1,6 @@
 import { Component } from '../Component';
 import { Icon } from './Icon';
-import { Eventable } from '../mixins';
+import { Eventable } from '../mixins/index';
 
 export class Option extends Eventable(Component) {
   type: string = 'option';
@@ -8,7 +8,7 @@ export class Option extends Eventable(Component) {
 
   constructor(title: string) {
     super();
-    super.title = title;
+    this.title = title;
   }
 
   /**

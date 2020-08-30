@@ -2,7 +2,7 @@ import { Component } from '../Component';
 import { SIZE } from '../enums/index';
 import { Image } from './Image';
 import { Indicator } from './Indicator';
-import { Actionable } from '../mixins';
+import { Actionable } from '../mixins/index';
 
 export class Notification extends Actionable(Component) {
   type: string = 'notification';
@@ -19,7 +19,7 @@ export class Notification extends Actionable(Component) {
    */
   constructor(title: string, subtitle: string, description: string) {
     super();
-    super.title = title;
+    this.title = title;
     this.subtitle = subtitle;
     this.description = description;
   }

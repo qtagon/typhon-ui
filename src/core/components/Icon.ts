@@ -9,7 +9,7 @@ export class Icon extends Component {
 
   constructor(title: string) {
     super();
-    super.title = title;
+    this.title = title;
   }
 
   /**

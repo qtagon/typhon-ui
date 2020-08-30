@@ -1,6 +1,6 @@
 import { Component } from '../Component';
 import { SIZE } from '../enums/index';
-import { Actionable } from '../mixins';
+import { Actionable } from '../mixins/index';
 import { Image } from './index';
 
 export class Media extends Actionable(Component) {
@@ -15,7 +15,7 @@ export class Media extends Actionable(Component) {
    */
   constructor(title: string, subtitle: string) {
     super();
-    super.title = title;
+    this.title = title;
     this.subtitle = subtitle;
   }
 

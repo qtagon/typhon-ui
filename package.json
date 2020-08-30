@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Strongly typed dynamic ui generator",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
@@ -18,7 +19,7 @@
     "url": "git+https://github.com/qtagon/typhon-ui.git"
   },
   "files": [
-    "lib/**/*"
+    "lib"
   ],
   "keywords": [
     "dynamic-ui",
@@ -28,7 +29,7 @@
     "typescript",
     "design"
   ],
-  "author": "",
+  "author": "dorin.musteata",
   "license": "GPLV3",
   "bugs": {
     "url": "https://github.com/qtagon/typhon-ui/issues"

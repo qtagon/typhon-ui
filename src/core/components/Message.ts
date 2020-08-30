@@ -14,7 +14,7 @@ export class Message extends Component {
    */
   constructor(title: string = '', subtitle: string = '') {
     super();
-    super.title = title;
+    this.title = title;
     this.subtitle = subtitle;
   }
 

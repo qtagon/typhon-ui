@@ -1,12 +1,12 @@
 import type { Element } from './interfaces';
-import { ALIGNMENT, POSITION, SIZE } from './enums';
+import { ALIGNMENT, POSITION, SIZE } from './enums/index';
 import Helper from './Helper';
 
 /**
  * Component class
  */
 export class Component implements Element {
-  identifier: string;
+  public identifier: string;
   type: string;
   title: string;
   classified: string;

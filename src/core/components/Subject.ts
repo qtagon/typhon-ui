@@ -9,6 +9,6 @@ export class Subject extends Component {
    */
   constructor(title: string) {
     super();
-    super.title = title;
+    this.title = title;
   }
 }

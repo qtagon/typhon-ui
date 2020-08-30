@@ -1,7 +1,7 @@
-import * as mixins from './mixins';
-import * as enums from './enums';
-import * as components from './components';
-import * as interfaces from './interfaces';
+import * as mixins from './mixins/index';
+import * as enums from './enums/index';
+import * as components from './components/index';
+import * as interfaces from './interfaces/index';
 
 import { Column } from './Column';
 import { Component } from './Component';

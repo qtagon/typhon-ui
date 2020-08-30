@@ -1,5 +1,5 @@
 import { Component } from '../Component';
-import { Actionable } from '../mixins';
+import { Actionable } from '../mixins/index';
 
 export class Modal extends Actionable(Component) {
   type: string = 'modal';
@@ -14,7 +14,7 @@ export class Modal extends Actionable(Component) {
    */
   constructor(title: string = '', subtitle: string = '') {
     super();
-    super.title = title;
+    this.title = title;
     this.subtitle = subtitle;
   }
 

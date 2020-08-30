@@ -1,5 +1,5 @@
 import { Component } from '../Component';
-import { SIZE } from '../enums';
+import { SIZE } from '../enums/index';
 
 export class Image extends Component {
   type: string = 'image';
@@ -7,7 +7,7 @@ export class Image extends Component {
 
   constructor(url: string, size: SIZE = SIZE.NONE) {
     super();
-    super.size = size;
+    this.size = size;
     this.url = url;
     this.placeholder = false;
   }

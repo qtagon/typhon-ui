@@ -1,7 +1,7 @@
-import { SIZE } from './enums';
-import { Media, Card, Action, Image, Notification, Search, Tabs, Menu, Subject, Message, Button } from './components';
+import { SIZE } from './enums/index';
+import { Media, Card, Action, Image, Notification, Search, Tabs, Menu, Subject, Message, Button } from './components/index';
 import { Component } from '.';
-import { Scrollable, Actionable } from './mixins';
+import { Scrollable, Actionable } from './mixins/index';
 
 export class Container extends Actionable(Scrollable(Component)) {
   type: string = 'container';
@@ -11,7 +11,7 @@ export class Container extends Actionable(Scrollable(Component)) {
 
   constructor(identifier: string = '') {
     super();
-    super.identifier = identifier;
+    this.identifier = identifier;
     this.components = [];
     this.icomponents = new Map();
   }
