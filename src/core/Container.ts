@@ -1,5 +1,17 @@
 import { SIZE } from './enums/index';
-import { Media, Card, Action, Image, Notification, Search, Tabs, Menu, Subject, Message, Button } from './components/index';
+import {
+  Media,
+  Card,
+  Action,
+  Image,
+  Notification,
+  Search,
+  Tabs,
+  Menu,
+  Subject,
+  Message,
+  Button,
+} from './components/index';
 import { Component } from '.';
 import { Scrollable, Actionable } from './mixins/index';
 
