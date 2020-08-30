@@ -9,14 +9,4 @@ import { Container } from './Container';
 import { Event } from './Event';
 import { Row } from './Row';
 
-export {
-  mixins,
-  enums,
-  components,
-  interfaces,
-  Column,
-  Component,
-  Container,
-  Event,
-  Row,
-};
+export { mixins, enums, components, interfaces, Column, Component, Container, Event, Row };

@@ -29,5 +29,5 @@ export {
   Tabs,
   Subject,
   Message,
-  Modal
+  Modal,
 };
