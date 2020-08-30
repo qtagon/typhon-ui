@@ -1,17 +1,12 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "module": "commonjs",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "target": "ES2019",
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "declaration": true,
     "outDir": "dist",
-    "baseUrl": "src",
-    "noImplicitAny": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "sourceMap": true
+    "strict": true,
+    "esModuleInterop": true
   },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*", "boostrap.js"]
+  "exclude": ["node_modules", "dist"]
 }
