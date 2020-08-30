@@ -4,7 +4,7 @@ import { Eventable } from '../mixins';
 
 export class Option extends Eventable(Component) {
   type: string = 'option';
-  public icon: Icon;
+  public icon?: Icon;
 
   constructor(title: string) {
     super();

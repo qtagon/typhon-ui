@@ -44,7 +44,7 @@ export class Column extends Scrollable(Component) {
    * Get column row
    * @param {string} identifier
    */
-  public onRow(identifier: string = ''): Row {
+  public onRow(identifier: string = ''): Row | undefined {
     const row = this.irows.get(identifier);
     return row;
   }

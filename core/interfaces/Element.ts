@@ -26,7 +26,7 @@ export default interface Element {
   setClassified(title: string): this;
   setAlignment(alignment: ALIGNMENT): this;
   setPosition(position: POSITION): this;
-  setSize(size: string): this;
+  setSize(size: SIZE): this;
   setStyle(style: string): this;
   setPlaceholder(enabled: boolean): this;
 }

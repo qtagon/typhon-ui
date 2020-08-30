@@ -44,7 +44,7 @@ export class Row extends Scrollable(Component) {
    * Get container row
    * @param {string} identifier
    */
-  public onContainer(identifier: string = ''): Container {
+  public onContainer(identifier: string = ''): Container | undefined {
     const container = this.icontainers.get(identifier);
     return container;
   }

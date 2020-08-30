@@ -5,7 +5,7 @@ import { Icon } from './Icon';
 export class Action extends Component {
   type: string = 'action';
   url: string = '';
-  protected icon: Icon;
+  protected icon?: Icon;
 
   constructor(title: string, size: SIZE = SIZE.NONE) {
     super();

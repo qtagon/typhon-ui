@@ -5,7 +5,7 @@ import { Eventable } from '../mixins';
 
 export class Button extends Eventable(Component) {
   type: string = 'button';
-  protected icon: Icon;
+  protected icon?: Icon;
 
   constructor(title: string, size: SIZE = SIZE.NONE) {
     super();

@@ -8,8 +8,8 @@ export class Notification extends Actionable(Component) {
   type: string = 'notification';
   subtitle: string = '';
   description: string = '';
-  protected image: Image;
-  protected indicator: Indicator;
+  protected image?: Image;
+  protected indicator?: Indicator;
 
   /**
    *

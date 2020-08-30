@@ -11,11 +11,11 @@ type Constructor<T = {}> = new (...args: any[]) => T;
  */
 function Actionable<TBase extends Constructor>(Base: TBase) {
   return class extends Base {
-    protected actions: Array<Action> = [];
-    protected iactions: Map<string, Action> = new Map();
+    public actions: Array<Action> = [];
+    public iactions: Map<string, Action> = new Map();
 
-    protected buttons: Array<Button> = [];
-    protected ibuttons: Map<string, Button> = new Map();
+    public buttons: Array<Button> = [];
+    public ibuttons: Map<string, Button> = new Map();
 
     /**
      * Set actions that the component has

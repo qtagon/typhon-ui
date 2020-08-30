@@ -6,7 +6,7 @@ import { Image } from './index';
 export class Media extends Actionable(Component) {
   type: string = 'media';
   subtitle: string = '';
-  protected image: Image;
+  protected image?: Image;
 
   /**
    *

@@ -5,7 +5,7 @@ export class Message extends Component {
   type: string = 'message';
 
   protected subtitle: string = '';
-  protected icon: Icon;
+  protected icon?: Icon;
 
   /**
    *
