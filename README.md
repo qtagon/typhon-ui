@@ -1,6 +1,7 @@
 # Typhon UI
 
-### Strongly typed Dynamic UI Generator
+Strongly typed Dynamic UI Generator
+
 
 
 ## Motivation
@@ -8,6 +9,7 @@
 As a Software Engineer i found myself that frontend development is repetitive , it was the time to change something.
 
 I decided to write a library for dynamic ui generation which includes every basic component and definition for them.
+
 
 
 ## API
@@ -18,13 +20,19 @@ Container has the definition for components , see `Usage Example`
 
 The final implementation of rendering and components design is up to you.
 
+
+
 ## Demo
 
 Comming soon...
 
+
+
 ## Installation
 
 `npm i @qtagon/typhon-ui` or `yarn add @qtagon/typhon-ui`
+
+
 
 ## Usage Example
 
@@ -77,9 +85,12 @@ Comming soon...
   
 ```
 
+
 ### Open source license
 
 If you are creating an open source application under a license compatible with the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html), you may use `typhon-ui` under the terms of the GPLv3.
+
+
 
 ### MIT license
 
