@@ -1,4 +1,4 @@
-import type { Element } from './interfaces';
+import type Element from './interfaces/Element';
 import { ALIGNMENT, POSITION, SIZE } from './enums/index';
 import Helper from './Helper';
 

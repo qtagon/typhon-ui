@@ -1,6 +1,6 @@
 import { Component } from '../Component';
 import { Icon } from './Icon';
-import { Eventable } from '../mixins/index';
+import Eventable from '../mixins/Eventable';
 
 export class Option extends Eventable(Component) {
   type: string = 'option';

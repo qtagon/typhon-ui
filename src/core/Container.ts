@@ -12,8 +12,9 @@ import {
   Message,
   Button,
 } from './components/index';
-import { Component } from '.';
-import { Scrollable, Actionable } from './mixins/index';
+import { Component } from './Component';
+import Actionable from './mixins/Actionable';
+import Scrollable from './mixins/Scrollable'
 
 export class Container extends Actionable(Scrollable(Component)) {
   type: string = 'container';

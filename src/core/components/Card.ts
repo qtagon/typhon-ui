@@ -2,7 +2,7 @@ import { Component } from '../Component';
 import { SIZE } from '../enums/index';
 import { Image } from './Image';
 import { Media } from './Media';
-import { Actionable } from '../mixins/index';
+import Actionable from '../mixins/Actionable';
 
 export class Card extends Actionable(Component) {
   type: string = 'card';
