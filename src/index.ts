@@ -109,9 +109,7 @@ class Typhon {
 
     this.rows.push(...column.getRows());
 
-    column
-      .getIndexedRows()
-      .forEach((e: Row) => this.irows.set(e.identifier, e));
+    column.getIndexedRows().forEach((e: Row) => this.irows.set(e.identifier, e));
 
     return this;
   }
@@ -128,9 +126,7 @@ class Typhon {
 
     this.containers.push(...row.getContainers());
 
-    row
-      .getIndexedContainers()
-      .forEach((e: Container) => this.icontainers.set(e.identifier, e));
+    row.getIndexedContainers().forEach((e: Container) => this.icontainers.set(e.identifier, e));
 
     return this;
   }
