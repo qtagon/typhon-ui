@@ -2,8 +2,9 @@
   "name": "@qtagon/typhon-ui",
   "version": "1.3.2",
   "description": "Strongly typed dynamic ui generator",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["/dist"],
   "scripts": {
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
@@ -18,10 +19,6 @@
     "type": "git",
     "url": "git+https://github.com/qtagon/typhon-ui.git"
   },
-  "files": [
-    "lib",
-    "dist"
-  ],
   "keywords": [
     "dynamic-ui",
     "typhon-ui",

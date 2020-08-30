@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es2017", "es7", "es6", "dom"],
     "declaration": true,
-    "outDir": "dist",
-    "strict": true,
-    "esModuleInterop": true
+    "declarationDir": "./dist",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "outDir": "./dist",
+    "target": "es5",
+    "moduleResolution": "node"
   },
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  },
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
