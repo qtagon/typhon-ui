@@ -14,7 +14,7 @@ import {
 } from './components/index';
 import { Component } from './Component';
 import Actionable from './mixins/Actionable';
-import Scrollable from './mixins/Scrollable'
+import Scrollable from './mixins/Scrollable';
 
 export class Container extends Actionable(Scrollable(Component)) {
   type: string = 'container';
