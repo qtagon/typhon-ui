@@ -23,4 +23,4 @@ function Eventable<TBase extends Constructor>(Base: TBase) {
   };
 }
 
-export {Eventable};
+export { Eventable };

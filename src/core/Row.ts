@@ -1,6 +1,6 @@
 import { Container } from './Container';
 import { Component } from './Component';
-import {Scrollable} from './mixins/Scrollable';
+import { Scrollable } from './mixins/Scrollable';
 
 export class Row extends Scrollable(Component) {
   type: string = 'row';
