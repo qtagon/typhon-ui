@@ -43,4 +43,4 @@ function Actionable<TBase extends Constructor>(Base: TBase) {
   };
 }
 
-export default Actionable;
+export { Actionable };

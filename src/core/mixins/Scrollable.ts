@@ -20,4 +20,4 @@ function Scrollable<TBase extends Constructor>(Base: TBase) {
   };
 }
 
-export default Scrollable;
+export { Scrollable };

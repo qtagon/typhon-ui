@@ -3,7 +3,7 @@ import type { ALIGNMENT, POSITION, SIZE } from '../enums';
 /**
  * Interface for every component in the system
  */
-export default interface Element {
+export interface Element {
   /**
    * Properties
    */

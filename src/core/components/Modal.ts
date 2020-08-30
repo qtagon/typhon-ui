@@ -1,5 +1,5 @@
 import { Component } from '../Component';
-import Actionable from '../mixins/Actionable';
+import { Actionable } from '../mixins/Actionable';
 
 export class Modal extends Actionable(Component) {
   type: string = 'modal';

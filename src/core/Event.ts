@@ -1,4 +1,4 @@
-import Helper from './Helper';
+import { Helper } from './Helper';
 
 export class Event {
   identifier: string;
@@ -6,7 +6,7 @@ export class Event {
   parameters: any;
 
   constructor(name: string = '', parameters: any = '') {
-    this.identifier = Helper.guid();
+    this.identifier = new Helper().guid();
     this.name = name;
     this.parameters = parameters;
   }

@@ -1,6 +1,6 @@
 import { Component } from '../Component';
-import Actionable from '../mixins/Actionable';
-import Eventable from '../mixins/Eventable';
+import { Actionable } from '../mixins/Actionable';
+import { Eventable } from '../mixins/Eventable';
 
 export class Search extends Eventable(Actionable(Component)) {
   type: string = 'search';

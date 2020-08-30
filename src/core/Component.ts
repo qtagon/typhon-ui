@@ -1,6 +1,6 @@
-import type Element from './interfaces/Element';
+import type { Element } from './interfaces/Element';
 import { ALIGNMENT, POSITION, SIZE } from './enums/index';
-import Helper from './Helper';
+import { Helper } from './Helper';
 
 /**
  * Component class
@@ -21,7 +21,7 @@ export class Component implements Element {
    * @param identifier
    */
   constructor(identifier: string = '') {
-    this.identifier = identifier || Helper.guid();
+    this.identifier = identifier || new Helper().guid();
     this.type = '';
     this.title = '';
     this.classified = '';

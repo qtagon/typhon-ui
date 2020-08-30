@@ -1,7 +1,7 @@
 import { Component } from '../Component';
 import { SIZE } from '../enums/index';
 import { Icon } from './Icon';
-import Eventable from '../mixins/Eventable';
+import { Eventable } from '../mixins/Eventable';
 
 export class Button extends Eventable(Component) {
   type: string = 'button';

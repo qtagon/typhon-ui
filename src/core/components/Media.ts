@@ -1,7 +1,7 @@
 import { Component } from '../Component';
 import { SIZE } from '../enums/index';
 import { Image } from './Image';
-import Actionable from '../mixins/Actionable';
+import { Actionable } from '../mixins/Actionable';
 
 export class Media extends Actionable(Component) {
   type: string = 'media';

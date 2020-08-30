@@ -1,3 +1,3 @@
-import type Element from './Element';
+import type { Element } from './Element';
 
 export type { Element };
