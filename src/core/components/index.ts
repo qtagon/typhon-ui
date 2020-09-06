@@ -31,5 +31,5 @@ export {
   Subject,
   Message,
   Modal,
-  Form
+  Form,
 };

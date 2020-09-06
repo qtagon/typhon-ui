@@ -11,7 +11,7 @@ import {
   Subject,
   Message,
   Button,
-  Form
+  Form,
 } from './components/index';
 import { Component } from './Component';
 import { Actionable } from './mixins/Actionable';

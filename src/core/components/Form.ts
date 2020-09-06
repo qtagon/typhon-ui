@@ -6,7 +6,7 @@ export class Form extends Actionable(Component) {
   type: string = 'form';
   subtitle: string = '';
   description: string = '';
-  
+
   public inputs: Array<Input> = [];
   public iinputs: Map<string, Input> = new Map();
 
