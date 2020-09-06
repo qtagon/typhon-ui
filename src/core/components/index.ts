@@ -33,5 +33,5 @@ export {
   Message,
   Modal,
   Form,
-  Input
+  Input,
 };
