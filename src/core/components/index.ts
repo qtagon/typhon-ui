@@ -13,6 +13,7 @@ import { Tabs } from './Tabs';
 import { Subject } from './Subject';
 import { Message } from './Message';
 import { Modal } from './Modal';
+import { Form } from './Form';
 
 export {
   Action,
@@ -30,4 +31,5 @@ export {
   Subject,
   Message,
   Modal,
+  Form
 };

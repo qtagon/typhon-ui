@@ -11,6 +11,7 @@ import {
   Subject,
   Message,
   Button,
+  Form
 } from './components/index';
 import { Component } from './Component';
 import { Actionable } from './mixins/Actionable';
@@ -178,5 +179,17 @@ export class Container extends Actionable(Scrollable(Component)) {
     const message = new Message(title, subtitle);
     this.setComponent(message);
     return message;
+  }
+
+  /**
+   *
+   * @param {string} title
+   * @param {string} subtitle
+   * @param {string} description
+   */
+  public setForm(title: string = '', subtitle: string = '', description: string = ''): Form {
+    const form = new Form(title, subtitle, description);
+    this.setComponent(form);
+    return form;
   }
 }
