@@ -1,6 +1,5 @@
 import { Event } from '../Event';
-
-type Constructor<T = {}> = new (...args: any[]) => T;
+import { Constructor } from './Constructor';
 
 /**
  * Eventable

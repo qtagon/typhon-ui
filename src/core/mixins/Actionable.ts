@@ -1,8 +1,7 @@
 import { Action } from '../components/Action';
 import { Button } from '../components/Button';
 import { SIZE } from '../enums/index';
-
-type Constructor<T = {}> = new (...args: any[]) => T;
+import { Constructor } from './Constructor';
 
 /**
  * Actionable

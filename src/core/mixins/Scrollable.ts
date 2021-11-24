@@ -1,4 +1,4 @@
-type Constructor<T = {}> = new (...args: any[]) => T;
+import { Constructor } from './Constructor';
 
 /**
  * Scrollable

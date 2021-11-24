@@ -156,4 +156,5 @@ class Typhon {
  */
 export * from './core/enums';
 export * from './core/components';
+export * from './core'
 export { Typhon };
