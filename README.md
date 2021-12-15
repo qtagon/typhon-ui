@@ -2,6 +2,8 @@
 
 _Complex user interfaces via code 🎨_
 
+## Documentation
+
 Check typedocs [here](https://qtagon.github.io/typhon-ui/index.html), _generated via [typedoc](https://typedoc.org/)_.
 
 ## 💥 Motivation
