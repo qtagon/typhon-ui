@@ -48,6 +48,10 @@ _[Components](https://github.com/qtagon/typhon-ui/tree/master/src/core/component
 
 ### 🧱 Installation
 
+**Typhon UI** uses [TypeScript](https://www.typescriptlang.org/), you may install this library in any *TypeScript* enabled project via `npm` or `yarn`.
+
+You can use this library server side with Node.js
+
 `npm i @qtagon/typhon-ui` or `yarn add @qtagon/typhon-ui`
 
 ---
@@ -144,11 +148,11 @@ const setMovieCard = (data, poster = 'https://image.tmdb.org/t/p/w500') => {
 
 ---
 
-### 📄 Open source license
+## 📄 Open source license
 
 If you are creating an open source application under a license compatible with the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html), you may use `typhon-ui` under the terms of the GPLv3.
 
-### 👥 Contributing
+## 👥 Contributing
 
 [Bugs](https://github.com/qtagon/typhon-ui/issues?q=is%3Aopen+is%3Aissue+label%3Abug), [PR](https://github.com/qtagon/typhon-ui-svelte/pulls) are always appreciated.
 
@@ -164,6 +168,6 @@ Flow:
 6. Push to the branch (`git push origin my-new-feature`)
 7. Create new Pull Request
 
-### 📝 MIT license
+## 📝 MIT license
 
 If you are looking for a GPLv3 free license, contact [me](https://github.com/dorin-musteata).
