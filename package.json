@@ -23,6 +23,9 @@
     "type": "git",
     "url": "git+https://github.com/qtagon/typhon-ui.git"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "keywords": [
     "dynamic-ui",
     "typhon-ui",
