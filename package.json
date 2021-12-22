@@ -19,10 +19,7 @@
     "lint": "tslint -p tsconfig.json",
     "docs": "typedoc --out docs ./src --includes ./docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/qtagon/typhon-ui.git"
-  },
+  "repository": "https://github.com/qtagon/typhon-ui.git",
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
   },
