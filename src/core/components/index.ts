@@ -15,6 +15,7 @@ import { Message } from './Message';
 import { Modal } from './Modal';
 import { Form } from './Form';
 import { Input } from './Input';
+import { Navigation } from './Navigation';
 
 export {
   Action,
@@ -34,4 +35,5 @@ export {
   Modal,
   Form,
   Input,
+  Navigation,
 };

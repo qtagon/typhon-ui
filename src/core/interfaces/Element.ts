@@ -10,6 +10,7 @@ export interface Element {
   identifier: string;
   type: string;
   title: string;
+  label: string;
   classified: string;
   alignment: ALIGNMENT;
   position: POSITION;
@@ -23,6 +24,7 @@ export interface Element {
   setIdentifier(identifier: string): this;
   setType(type: string): this;
   setTitle(title: string): this;
+  setLabel(label: string): this;
   setClassified(title: string): this;
   setAlignment(alignment: ALIGNMENT): this;
   setPosition(position: POSITION): this;

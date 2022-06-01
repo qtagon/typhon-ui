@@ -12,6 +12,7 @@ import {
   Message,
   Button,
   Form,
+  Navigation,
 } from './components/index';
 import { Component } from './Component';
 import { Actionable } from './mixins/Actionable';
@@ -78,7 +79,6 @@ export class Container extends Actionable(Scrollable(Component)) {
   }
 
   /**
-   *
    * @param {string} title
    * @param {string} subtitle
    */
@@ -99,7 +99,6 @@ export class Container extends Actionable(Scrollable(Component)) {
   }
 
   /**
-   *
    * @param {string} title
    */
   public setTabs(title: string = ''): Tabs {
@@ -109,7 +108,6 @@ export class Container extends Actionable(Scrollable(Component)) {
   }
 
   /**
-   *
    * @param {string} title
    * @param {string} subtitle
    */
@@ -142,7 +140,6 @@ export class Container extends Actionable(Scrollable(Component)) {
   }
 
   /**
-   *
    * @param {string} title
    * @param {string} subtitle
    */
@@ -191,5 +188,15 @@ export class Container extends Actionable(Scrollable(Component)) {
     const form = new Form(title, subtitle, description);
     this.setComponent(form);
     return form;
+  }
+
+  /**
+   * @param {string} title
+   * @param {string} label
+   */
+  public setNavigation(title: string = '', label: string = ''): Navigation {
+    const navigation = new Navigation(title, label);
+    this.setComponent(navigation);
+    return navigation;
   }
 }

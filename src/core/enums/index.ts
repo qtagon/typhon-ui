@@ -11,6 +11,7 @@ export enum ALIGNMENT {
   MIDDLE = 'middle',
   RIGHT = 'right',
   NONE = 'none-alignment',
+  CENTER = 'center',
 }
 
 export enum SIZE {

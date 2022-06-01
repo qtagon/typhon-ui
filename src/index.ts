@@ -1,6 +1,6 @@
 import { Column, Container, Row } from './core/index';
 import type { Component } from './core/Component';
-import { Modal } from './core/components/index';
+import { Modal, Navigation } from './core/components/index';
 
 /**
  * Typhon class
@@ -76,6 +76,13 @@ class Typhon {
   }
 
   /**
+   *
+   */
+  public getComponentsByLabel(label: string = ''): Array<Component> {
+    return this.components.filter((e: Component) => e.label === label);
+  }
+
+  /**
    * @param {string} title
    * @param {string} subtitle
    */
@@ -83,6 +90,16 @@ class Typhon {
     const modal = new Modal(title, subtitle);
     this.setComponent(modal);
     return modal;
+  }
+
+  /**
+   * @param {string} title
+   * @param {string} label
+   */
+  public setNavigation(title: string = '', label: string = ''): Navigation {
+    const navigation = new Navigation(title, label);
+    this.setComponent(navigation);
+    return navigation;
   }
 
   /**
@@ -156,5 +173,5 @@ class Typhon {
  */
 export * from './core/enums';
 export * from './core/components';
-export * from './core'
+export * from './core';
 export { Typhon };

@@ -9,6 +9,7 @@ export class Component implements Element {
   public identifier: string;
   type: string;
   title: string;
+  label: string;
   classified: string;
   alignment: ALIGNMENT;
   position: POSITION;
@@ -24,6 +25,7 @@ export class Component implements Element {
     this.identifier = identifier || new Helper().guid();
     this.type = '';
     this.title = '';
+    this.label = '';
     this.classified = '';
     this.alignment = ALIGNMENT.NONE;
     this.position = POSITION.NONE;
@@ -56,6 +58,15 @@ export class Component implements Element {
    */
   public setTitle(title: string = ''): this {
     this.title = title;
+    return this;
+  }
+
+  /**
+   * label setter
+   * @param {string} label
+   */
+  public setLabel(label: string = ''): this {
+    this.label = label;
     return this;
   }
 
